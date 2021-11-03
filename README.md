@@ -12,13 +12,18 @@
 ## Features
 
 - Minimal
-- Generates both CommonJS and ES Modules, ready to publish on npm
-- Jest with Sucrase for super fast tests, coverage and VSCode integration
+- Generates both **CommonJS** and **ES Modules**, ready to **publish on npm**
+- **Jest** with **Sucrase** for super fast tests, coverage and amazing **VSCode integration**
+- API docs with Documentationjs
 - ESLint
 - Prettier
 - Husky
 
+## API
+
+> - This section will be replaced with documentation after running: `npm run docs`
+
 ## License
 
-MIT &copy; 2021
+MIT © 2021
 [stagas](https://github.com/stagas)
