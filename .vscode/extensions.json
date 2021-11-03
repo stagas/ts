@@ -1,12 +1,10 @@
 {
 	"recommendations": [
-		"gabrielgrinberg.auto-run-command",
-		"ryanluker.vscode-coverage-gutters",
 		"esbenp.prettier-vscode",
 		"dbaeumer.vscode-eslint",
 		"usernamehw.errorlens",
 		"salbert.comment-ts",
-		"hbenl.vscode-mocha-test-adapter",
+		"orta.vscode-jest",
 		"gruntfuggly.todo-tree"
 	]
 }
