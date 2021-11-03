@@ -1,0 +1,13 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "cov:watch",
+      "group": "build",
+      "problemMatcher": [],
+      "label": "Coverage",
+      "isBackground": true
+    }
+  ]
+}
