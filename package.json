@@ -39,7 +39,7 @@
     "test:watch": "jest --watchAll",
     "cov": "jest --coverage",
     "cov:watch": "jest --coverage --watchAll",
-    "docs": "documentation readme src/index.ts --parse-extension ts --github --section=API --markdown-toc-max-depth=2",
+    "docs": "documentation readme src --resolve=node --pe ts --re ts --re d.ts --github --section=API --markdown-toc-max-depth=2",
     "docs:watch": "onchange -i src -- npm run docs",
     "lint": "eslint src",
     "lint:fix": "npm run lint -- --fix",
