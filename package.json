@@ -33,7 +33,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "npm run build:cjs && npm run build:esm",
-    "build:cjs": "tsc",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
     "build:esm": "tsc -p tsconfig.esm.json && echo '{\"type\":\"module\"}' >dist/esm/package.json",
     "test": "jest",
     "test:watch": "jest --watchAll",

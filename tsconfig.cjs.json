@@ -4,8 +4,8 @@
     "**/*.spec.ts"
   ],
   "compilerOptions": {
-    "outDir": "dist/esm",
-    "module": "esnext",
+    "outDir": "dist/cjs",
+    "module": "commonjs",
     "target": "esnext"
   }
 }

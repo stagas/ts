@@ -1,10 +1,7 @@
 {
   "extends": "@tsconfig/node16/tsconfig.json",
   "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "src/**/*.spec.ts"
+    "src"
   ],
   "compilerOptions": {
     "moduleResolution": "node",
