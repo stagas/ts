@@ -3,10 +3,12 @@ module.exports = {
   testMatch: ['**/*.spec.{ts,tsx}'],
   transform: {
     '\\.(js|jsx|ts|tsx)$': [
-      '@stagas/sucrase-jest-plugin',
+      '@swc-node/jest',
       {
-        jsxPragma: 'h',
-        jsxFragmentPragma: 'Fragment'
+        react: {
+          pragma: 'h',
+          pragmaFrag: 'Fragment'
+        }
       }
     ]
   }
