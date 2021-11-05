@@ -11,10 +11,10 @@
 
 - Minimal
 - Generates both **CommonJS** and **ES Modules**, ready to **publish on npm**
-- [Jest](https://jestjs.io/) with [Sucrase](https://github.com/alangpierce/sucrase/) for super fast tests, coverage and amazing **VSCode integration**
+- [Jest](https://jestjs.io/) with [swc](https://github.com/swc-project/swc) / [swc-node](https://github.com/Brooooooklyn/swc-node) for super fast tests, coverage and amazing [VSCode integration](https://marketplace.visualstudio.com/items?itemName=kavod-io.vscode-jest-test-adapter)
 - Browser API testing using **JSDom**
-- **[API](#api) docs** with [Documentation.js](http://documentation.js.org/)
-- **JSX** with custom pragmas
+- [API](#api) docs with [Documentation.js](http://documentation.js.org/)
+- **JSX** out of the box
 - [ESLint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
 - [Husky](https://typicode.github.io/husky/)
