@@ -1,11 +1,7 @@
 {
-  "extends": "./tsconfig.base.json",
-  "exclude": [
-    "**/*.spec.ts"
-  ],
+  "extends": "./tsconfig.dist.json",
   "compilerOptions": {
     "outDir": "dist/cjs",
-    "module": "commonjs",
-    "target": "esnext"
+    "module": "commonjs"
   }
 }
