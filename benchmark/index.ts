@@ -1,5 +1,5 @@
 import { suite, add, cycle, complete, configure } from 'benny'
-import { chartReporter } from './helpers/chart-reporter'
+import { asciiChartReporter } from 'benny-ascii-chart-reporter'
 
 import * as math from '../src'
 
@@ -19,6 +19,6 @@ suite(
   add('div', () => math.div(2, 5)),
 
   cycle(),
-  complete(chartReporter),
+  complete(asciiChartReporter()),
   complete()
 )
