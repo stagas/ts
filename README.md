@@ -12,7 +12,8 @@
 - Minimal
 - Generates both **CommonJS** and **ES Modules**, ready to **publish on npm**
 - [Jest](https://jestjs.io/) with [Sucrase](https://github.com/alangpierce/sucrase/) for super fast tests, coverage and amazing **VSCode integration**
-- API docs with [Documentation.js](http://documentation.js.org/)
+- Browser API testing using **JSDom**
+- **[API](#api) docs** with [Documentation.js](http://documentation.js.org/)
 - **JSX** with custom pragmas
 - [ESLint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
