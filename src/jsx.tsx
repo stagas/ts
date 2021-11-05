@@ -11,4 +11,4 @@
 
 const h = (...args: unknown[]) => args
 
-export const vdom = <div />
+export const vdom = () => <div />
