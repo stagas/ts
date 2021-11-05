@@ -1,4 +1,13 @@
 module.exports = {
-  testEnvironment: 'node',
-  transform: { '\\.(js|jsx|ts|tsx)$': '@sucrase/jest-plugin' }
+  testEnvironment: 'node', // or 'jsdom'
+  testMatch: ['**/*.spec.{ts,tsx}'],
+  transform: {
+    '\\.(js|jsx|ts|tsx)$': [
+      '@stagas/sucrase-jest-plugin',
+      {
+        jsxPragma: 'h',
+        jsxFragmentPragma: 'Fragment'
+      }
+    ]
+  }
 }
