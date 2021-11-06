@@ -16,6 +16,7 @@
 - [API](#api) docs with [Documentation.js](http://documentation.js.org/)
 - **JSX** out of the box
 - **Benchmarks** with [benny](https://github.com/caderek/benny) - _"make it work, make it pretty, **make it fast**"_
+- Interactive **examples picker** using [fpick](https://github.com/stagas/fpick)
 - [ESLint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
 - [Husky](https://typicode.github.io/husky/)
