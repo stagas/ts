@@ -9,9 +9,9 @@ module.exports = {
       {
         react: {
           pragma: 'h',
-          pragmaFrag: 'Fragment'
-        }
-      }
-    ]
-  }
+          pragmaFrag: 'Fragment',
+        },
+      },
+    ],
+  },
 }
