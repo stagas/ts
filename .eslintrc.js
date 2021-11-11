@@ -17,8 +17,16 @@ module.exports = {
   settings: {
     react: {
       pragma: 'h',
-      fragment: 'Fragment'
-    }
+      fragment: 'Fragment',
+      version: '17',
+    },
   },
-  rules: {}
+  rules: {
+    '@typescript-eslint/no-extra-semi': 'off',
+    '@typescript-eslint/no-non-null-assertion': 'off',
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      { args: 'all', argsIgnorePattern: '^_' },
+    ],
+  },
 }
