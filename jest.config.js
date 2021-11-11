@@ -7,6 +7,8 @@ module.exports = {
     '\\.(js|jsx|ts|tsx)$': [
       '@swc-node/jest',
       {
+        experimentalDecorators: true,
+        emitDecoratorMetadata: true,
         react: {
           pragma: 'h',
           pragmaFrag: 'Fragment',
