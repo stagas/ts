@@ -2,13 +2,16 @@
   "extends": "@tsconfig/node16/tsconfig.json",
   "include": [
     "benchmark",
-    "examples",
+    "example",
     "src"
   ],
   "ts-node": {
     "files": true
   },
   "compilerOptions": {
+    "lib": [
+      "dom"
+    ],
     "outDir": "dist",
     "moduleResolution": "node",
     "experimentalDecorators": true,
