@@ -1,4 +1,4 @@
-import { add, sub, div } from './'
+import { add, sub, div } from '../'
 
 describe('a suite', () => {
   it('sums up 2 numbers', () => {
