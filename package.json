@@ -53,6 +53,7 @@
     "example:watch": "fpick example --repeat -- onchange -i src example --await-write-finish 400 --kill -- node -r @swc-node/register",
     "build:cjs": "tsc -p tsconfig.cjs.json",
     "build:esm": "tsc -p tsconfig.esm.json && echo '{\"type\":\"module\"}' >dist/esm/package.json",
+    "build:min": "esbuild src/index.ts --bundle --format=esm | terser --compress --module --mangle -o build.min.js",
     "lint:fix": "eslint --fix src && prettier --write src",
     "clean": "rimraf dist",
     "prepack": "npm run build",
@@ -72,6 +73,7 @@
     "benny": "^3.7.1",
     "benny-ascii-chart-reporter": "^1.0.1",
     "documentation": "github:documentationjs/documentation",
+    "esbuild": "^0.13.15",
     "eslint": "^8.3.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-react": "^7.27.1",
@@ -82,6 +84,7 @@
     "onchange": "^7.1.0",
     "prettier": "^2.4.1",
     "rimraf": "^3.0.2",
+    "terser": "^5.10.0",
     "ts-node": "^10.4.0",
     "typescript": "^4.5.2",
     "vite": "^2.6.14"
