@@ -29,5 +29,6 @@ module.exports = {
       'error',
       { args: 'all', argsIgnorePattern: '^_' },
     ],
+    'no-fallthrough': 'error'
   },
 }
