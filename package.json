@@ -61,8 +61,7 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@swc-node/jest": "^1.4.1",
-    "@swc-node/register": "^1.4.0",
+    "@stagas/sucrase-jest-plugin": "^2.2.0-fork",
     "@tsconfig/node16": "^1.0.2",
     "@types/jest": "^27.0.3",
     "@types/node": "^16.11.9",
