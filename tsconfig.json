@@ -1,6 +1,7 @@
 {
   "extends": "@tsconfig/node16/tsconfig.json",
   "include": [
+    "playground",
     "benchmark",
     "example",
     "src"
@@ -8,9 +9,15 @@
   "ts-node": {
     "files": true
   },
+  "watchOptions": {
+    "watchFile": "priorityPollingInterval",
+    "watchDirectory": "dynamicPriorityPolling"
+  },
   "compilerOptions": {
     "lib": [
-      "dom"
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
     ],
     "outDir": "dist",
     "moduleResolution": "node",
