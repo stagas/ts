@@ -11,16 +11,12 @@
 
 - Minimal
 - Generates both **CommonJS** and **ES Modules**, ready to **publish on npm**
-- [Jest](https://jestjs.io/) with [swc](https://github.com/swc-project/swc) / [swc-node](https://github.com/Brooooooklyn/swc-node) for super fast tests, coverage and amazing [VSCode integration](https://marketplace.visualstudio.com/items?itemName=kavod-io.vscode-jest-test-adapter)
-- Browser API testing using **JSDom**
-- [API](#api) docs with [Documentation.js](http://documentation.js.org/)
+- [Jest](https://jestjs.io/)
+- Browser testing with [WebTestRunner](https://modern-web.dev/docs/test-runner/overview/)
 - **JSX** out of the box
-- **Benchmarks** with [benny](https://github.com/caderek/benny) - _"make it work, make it pretty, **make it fast**"_
-- Interactive **examples picker** using [fpick](https://github.com/stagas/fpick)
 - [ESLint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
 - [Husky](https://typicode.github.io/husky/)
-- Suggested [VSCode extensions](https://marketplace.visualstudio.com/vscode) and productivity related configurations
 
 ## API
 

@@ -42,7 +42,6 @@
   },
   "devDependencies": {
     "@n1kk/intspector": "^1.0.2",
-    "@stagas/documentation-fork": "^13.2.5",
     "@stagas/sucrase-jest-plugin": "^2.2.0-fork",
     "@swc-node/jest": "^1.4.3",
     "@tsconfig/node16": "^1.0.2",
