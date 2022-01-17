@@ -1,8 +1,12 @@
 module.exports = {
-  testEnvironment: 'node', // or 'jsdom'
-  rootDir: 'src',
+  testEnvironment: 'node', // or 'jsdom',
+  rootDir: '.',
+  roots: ['<rootDir>/test/'],
   testMatch: ['**/*.spec.{js,jsx,ts,tsx}'],
-  coverageDirectory: '../coverage',
+  testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/test/web/'],
+  coverageDirectory: '<rootDir>/coverage',
+  collectCoverageFrom: ['src/**/*.{ts,tsx}'],
+  coverageProvider: 'v8',
 
   // enable this for real typescript builds (slow but accurate)
   // preset: 'ts-jest',

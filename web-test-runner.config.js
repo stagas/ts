@@ -1,9 +1,10 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const { esbuildPlugin } = require('@web/dev-server-esbuild')
+const { summaryReporter } = require('@web/test-runner')
 
 module.exports = {
+  concurrency: 1,
   nodeResolve: true,
-  files: ['src/**/*.spec.{ts,tsx}'],
+  files: ['test/**/*.spec.web.{ts,tsx}'],
   plugins: [
     esbuildPlugin({
       ts: true,
@@ -11,6 +12,9 @@ module.exports = {
       jsxFactory: 'h',
       jsxFragment: 'Fragment',
     }),
+  ],
+  reporters: [
+    summaryReporter(),
   ],
   coverageConfig: {
     include: ['src/**/*.{ts,tsx}'],
