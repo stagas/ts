@@ -1,5 +1,9 @@
 const { esbuildPlugin } = require('@web/dev-server-esbuild')
 const { summaryReporter } = require('@web/test-runner')
+const { fromRollup } = require('@web/dev-server-rollup')
+const rollupCommonjs = require('@rollup/plugin-commonjs')
+
+const commonjs = fromRollup(rollupCommonjs);
 
 module.exports = {
   concurrency: 1,
@@ -12,6 +16,7 @@ module.exports = {
       jsxFactory: 'h',
       jsxFragment: 'Fragment',
     }),
+    commonjs(),
   ],
   reporters: [
     summaryReporter(),

@@ -42,6 +42,7 @@
   },
   "devDependencies": {
     "@n1kk/intspector": "^1.0.2",
+    "@rollup/plugin-commonjs": "^21.0.1",
     "@stagas/sucrase-jest-plugin": "^2.2.0-fork",
     "@swc-node/jest": "^1.4.3",
     "@tsconfig/node16": "^1.0.2",
@@ -50,6 +51,7 @@
     "@typescript-eslint/eslint-plugin": "^5.10.0",
     "@typescript-eslint/parser": "^5.10.0",
     "@web/dev-server-esbuild": "^0.2.16",
+    "@web/dev-server-rollup": "^0.3.14",
     "@web/test-runner": "^0.13.25",
     "esbuild": "^0.14.11",
     "esbuild-register": "^3.3.2",
