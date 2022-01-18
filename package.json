@@ -29,6 +29,7 @@
     "test:node": "jest",
     "test:web": "web-test-runner",
     "cov": "jest --coverage",
+    "docs": "documentation readme src --resolve=node --pe ts --re ts --re d.ts --github --section=API --markdown-toc-max-depth=3",
     "build": "npm run build:cjs && npm run build:esm && echo done.",
     "build:cjs": "tsc --outDir dist/cjs",
     "build:esm": "tsc --outDir dist/esm --module esnext && echo '{\"type\":\"module\"}' >dist/esm/package.json",
@@ -43,6 +44,7 @@
   "devDependencies": {
     "@n1kk/intspector": "^1.0.2",
     "@rollup/plugin-commonjs": "^21.0.1",
+    "@stagas/documentation-fork": "^13.2.5",
     "@stagas/sucrase-jest-plugin": "^2.2.0-fork",
     "@swc-node/jest": "^1.4.3",
     "@tsconfig/node16": "^1.0.2",
