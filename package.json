@@ -23,7 +23,7 @@
     "dist"
   ],
   "scripts": {
-    "build:watch": "tsc --outDir dist/esm --module esnext --watch",
+    "build:watch": "tsc --outDir dist/esm --module esnext --watch & tsc --outDir dist/cjs --watch",
     "cov:watch": "jest --coverage --watchAll",
     "test": "npm run test:node && npm run test:web",
     "test:node": "jest",
