@@ -66,7 +66,7 @@
     "jest-browser-globals": "^25.1.0-beta",
     "onchange": "^7.1.0",
     "prettier": "^2.5.1",
-    "pull-configs": "^0.1.0",
+    "pull-configs": "^0.1.1",
     "rimraf": "^3.0.2",
     "terser": "^5.10.0",
     "ts-jest": "^27.1.3",
