@@ -8,12 +8,10 @@
     "files": true
   },
   "include": [
+    "example",
     "src",
+    "test",
     "types"
-  ],
-  "exclude": [
-    "**/*.spec.ts",
-    "**/*.spec.tsx"
   ],
   "compilerOptions": {
     "outDir": "dist/cjs",
