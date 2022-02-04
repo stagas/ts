@@ -1,2 +1,3 @@
-// ambient types like:
+/* ambient types like: */
+
 // declare module 'scoped-registries'
