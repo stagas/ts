@@ -30,9 +30,7 @@
     "sourceMap": true,
     "module": "commonjs",
     "target": "esnext",
-    "jsx": "react",
-    "jsxFactory": "h",
-    "jsxFragmentFactory": "Fragment",
+    "jsx": "preserve",
     "strict": true
   }
 }
