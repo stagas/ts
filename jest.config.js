@@ -4,8 +4,9 @@ module.exports = {
   roots: ['<rootDir>/test/', '<rootDir>/src'],
   testMatch: ['**/*.spec.{js,jsx,ts,tsx}'],
   testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/test/web/'],
-  coverageDirectory: '<rootDir>/coverage',
   collectCoverageFrom: ['src/**/*.{ts,tsx}'],
+  coverageDirectory: '<rootDir>/coverage',
+  coveragePathIgnorePatterns: ['types'],
   coverageProvider: 'v8',
 
   // enable this for real typescript builds (slow but accurate)
