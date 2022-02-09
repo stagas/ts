@@ -28,6 +28,7 @@
     "inlineSources": true,
     "declaration": true,
     "sourceMap": true,
+    "allowJs": true,
     "module": "commonjs",
     "target": "esnext",
     "jsx": "preserve",
