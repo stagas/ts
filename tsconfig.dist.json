@@ -5,5 +5,9 @@
     "test",
     "**/*.spec.ts",
     "**/*.spec.tsx"
-  ]
+  ],
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "base-custom-element"
+  }
 }
