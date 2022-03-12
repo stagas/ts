@@ -8,6 +8,6 @@
   ],
   "compilerOptions": {
     "jsx": "react-jsx",
-    "jsxImportSource": "base-custom-element"
+    "jsxImportSource": "html-vdom"
   }
 }

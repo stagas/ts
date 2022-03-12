@@ -4,10 +4,12 @@ module.exports = {
   roots: ['<rootDir>/test/', '<rootDir>/src'],
   testMatch: ['**/*.spec.{js,jsx,ts,tsx}'],
   testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/test/web/'],
-  collectCoverageFrom: ['src/**/*.{ts,tsx}'],
   coverageDirectory: '<rootDir>/coverage',
-  coveragePathIgnorePatterns: ['types'],
+  collectCoverageFrom: ['src/**/*.{ts,tsx}'],
   coverageProvider: 'v8',
+  moduleNameMapper: {
+    'react\\/(jsx-runtime|jsx-dev-runtime)$': 'html-vdom/$1',
+  },
 
   // enable this for real typescript builds (slow but accurate)
   // preset: 'ts-jest',
@@ -31,11 +33,29 @@ module.exports = {
     '\\.(js|jsx|ts|tsx)$': [
       '@swc-node/jest',
       {
-        experimentalDecorators: true,
-        emitDecoratorMetadata: true,
-        react: {
-          pragma: 'h',
-          pragmaFrag: 'Fragment',
+        swc: {
+          jsc: {
+            target: 'es2022',
+            parser: {
+              syntax: 'typescript',
+              tsx: true,
+              decorators: true,
+              dynamicImport: true,
+            },
+            transform: {
+              legacyDecorator: true,
+              decoratorMetadata: true,
+              useDefineForClassFields: true,
+              react: {
+                runtime: 'automatic',
+                importSource: 'html-vdom',
+              },
+              hidden: {
+                jest: true,
+              },
+            },
+            keepClassNames: true,
+          },
         },
       },
     ],
