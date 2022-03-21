@@ -45,6 +45,12 @@
     "prepush": "npm run lint && npm run test",
     "prepare": "husky install && node .pull-configs.js"
   },
+  "trustedDependencies": [
+    "@stagas/sucrase-jest-plugin",
+    "decarg",
+    "pull-configs",
+    "vite-open"
+  ],
   "devDependencies": {
     "@n1kk/intspector": "1.0.2",
     "@rollup/plugin-commonjs": "21.0.2",
