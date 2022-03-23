@@ -38,11 +38,11 @@
     "build:cjs": "tsc -p tsconfig.dist.json --outDir dist/cjs",
     "build:esm": "tsc -p tsconfig.dist.json --outDir dist/esm --module esnext && echo '{\"type\":\"module\"}' >dist/esm/package.json",
     "build:bundle": "esbuild dist/esm/index.js --bundle --format=esm --outfile=\"dist/$(cat package.json | jq -r '.name').js\" && wc -c \"dist/$(cat package.json | jq -r '.name').js\"",
-    "build:min": "esbuild dist/esm/index.js --bundle --format=esm | terser --compress --module --mangle -o \"dist/$(cat package.json | jq -r '.name').min.js\" && wc -c \"dist/$(cat package.json | jq -r '.name').min.js\"",
+    "build:min": "terser --compress --module --mangle -o \"dist/$(cat package.json | jq -r '.name').min.js\" \"dist/$(cat package.json | jq -r '.name').js\" && wc -c \"dist/$(cat package.json | jq -r '.name').min.js\"",
     "start:web:https": "vite-open --jsx=html-vdom --https example/web.ts",
     "lint": "eslint src && dprint check",
     "lint:fix": "eslint --fix src && dprint fmt",
-    "prepack": "npm run clean && npm run build && npm run build:dist",
+    "prepack": "npm run clean && npm run build && (npm run build:dist || echo unable to bundle)",
     "prepack:dry": "npm pack --dry-run",
     "prepush": "npm run lint && npm run test",
     "prepare": "husky install && node .pull-configs.js"
