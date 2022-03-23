@@ -16,6 +16,7 @@ merge('package.json', (prev, next) => {
 })
 replace('.gitignore')
 replace('.eslintrc.js')
+replace('.pull-configs.js')
 replace('dprint.json')
 replace('jest.config.js')
 replace('tsconfig.json')
