@@ -2,10 +2,12 @@
   "indentWidth": 2,
   "incremental": true,
   "typescript": {
-    "semiColons": "asi",
-    "quoteStyle": "alwaysSingle",
+    "arrowFunction.useParentheses": "preferNone",
+    "jsx.quoteStyle": "preferDouble",
     "quoteProps": "asNeeded",
-    "jsx.quoteStyle": "preferDouble"
+    "quoteStyle": "alwaysSingle",
+    "semiColons": "asi",
+    "useBraces": "preferNone"
   },
   "json": {},
   "markdown": {},
