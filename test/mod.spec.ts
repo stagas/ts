@@ -1,4 +1,4 @@
-import { add } from '../src'
+import { add } from '../src/mod'
 
 describe('add(a, b)', () => {
   it('adds two numbers together', () => {
