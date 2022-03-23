@@ -23,8 +23,7 @@
     "dist"
   ],
   "scripts": {
-    "start": "vite-open example/web.ts",
-    "start:https": "vite-open --https example/web.ts",
+    "start": "vite-open --jsx=html-vdom example/web.ts",
     "build:watch": "tsc -p tsconfig.dist.json --outDir dist/esm --module esnext --watch & tsc -p tsconfig.dist.json --outDir dist/cjs --watch",
     "build:dist": "npm run build:bundle && npm run build:min",
     "cov:watch": "jest --coverage --watchAll",
@@ -32,7 +31,7 @@
     "test:node": "jest",
     "test:web": "web-test-runner",
     "cov": "jest --coverage",
-    "docs": "documentation readme src --resolve=node --pe ts --re ts --re d.ts --github --section=API --markdown-toc-max-depth=3",
+    "docs": "documentation readme src --resolve=node --pe ts --re ts --re d.ts --github --section=API --markdown-toc-max-depth=3 && dprint fmt README.md",
     "build": "npm run build:cjs && npm run build:esm && echo done.",
     "build:cjs": "tsc -p tsconfig.dist.json --outDir dist/cjs",
     "build:esm": "tsc -p tsconfig.dist.json --outDir dist/esm --module esnext && echo '{\"type\":\"module\"}' >dist/esm/package.json",
