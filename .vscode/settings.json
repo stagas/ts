@@ -4,20 +4,13 @@
     "package.json": ".eslintrc.js, .pull-configs.js, dprint.json, jest.config.js, tsconfig.dist.json, tsconfig.json, web-test-runner.config.js"
   },
   "files.exclude": {
-    // ".eslintrc.js": true,
     ".gitattributes": true,
     ".gitignore": true,
     ".husky": true,
     ".npmrc": true,
-    // ".pull-configs.js": true,
     ".swc": true,
     ".vscode": true,
-    "coverage": true,
-    // "dprint.json": true,
-    // "jest.config.js": true,
-    // "tsconfig.dist.json": true,
-    // "tsconfig.json": true,
-    // "web-test-runner.config.js": true,
+    "coverage": true
   },
   "todo-tree.tree.scanMode": "workspace only",
   "npm-scripts.showStartNotification": false
