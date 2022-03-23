@@ -4,7 +4,8 @@
   "typescript": {
     "semiColons": "asi",
     "quoteStyle": "alwaysSingle",
-    "quoteProps": "asNeeded"
+    "quoteProps": "asNeeded",
+    "jsx.quoteStyle": "preferDouble"
   },
   "json": {},
   "markdown": {},
