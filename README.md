@@ -15,7 +15,7 @@
 - Browser testing with [WebTestRunner](https://modern-web.dev/docs/test-runner/overview/)
 - **JSX** out of the box
 - [ESLint](https://eslint.org/)
-- [Prettier](https://prettier.io/)
+- [dprint](https://dprint.dev/)
 - [Husky](https://typicode.github.io/husky/)
 
 ## API
@@ -30,5 +30,5 @@
 
 ## License
 
-MIT © 2021
+MIT © 2022
 [stagas](https://github.com/stagas)

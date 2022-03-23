@@ -4,7 +4,7 @@
     ".npmrc": true,
     ".gitignore": true,
     ".gitattributes": true,
-    ".prettierignore": true,
+    "dprint.json": true,
     "coverage": true
   },
   "todo-tree.tree.scanMode": "workspace only",
