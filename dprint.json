@@ -2,6 +2,7 @@
   "indentWidth": 2,
   "incremental": true,
   "typescript": {
+    "arguments.trailingCommas": "never",
     "arrowFunction.useParentheses": "preferNone",
     "jsx.quoteStyle": "preferDouble",
     "quoteProps": "asNeeded",
