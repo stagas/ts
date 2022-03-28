@@ -8,7 +8,7 @@ module.exports = {
   collectCoverageFrom: ['src/**/*.{ts,tsx}'],
   coverageProvider: 'v8',
   moduleNameMapper: {
-    'react\\/(jsx-runtime|jsx-dev-runtime)$': 'html-vdom/$1',
+    'react\\/(jsx-runtime|jsx-dev-runtime)$': 'html-vdom',
   },
   // preset: 'ts-jest',
   transform: {
@@ -30,7 +30,6 @@ module.exports = {
               useDefineForClassFields: true,
               react: {
                 runtime: 'automatic',
-                importSource: 'html-vdom',
               },
               hidden: {
                 jest: true,
