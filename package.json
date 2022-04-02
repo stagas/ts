@@ -24,7 +24,7 @@
     "dist"
   ],
   "scripts": {
-    "start:web": "vite-open --jsx=html-vdom example/web.ts",
+    "start:web": "vite-open example/web.ts",
     "start:node": "onchange -i src example -- swcno example/node.ts",
     "build:watch": "tsc -p tsconfig.dist.json --outDir dist/types --watch & swc -w -C module.type=commonjs ./src -d dist/cjs -w & swc -w -C module.type=es6 ./src -d dist/esm",
     "build:dist": "npm run build:bundle && npm run build:min",
@@ -41,7 +41,7 @@
     "build:types": "tsc -p tsconfig.dist.json --outDir dist/types",
     "build:bundle": "bunzee src/index.ts \"dist/$(cat package.json | jq -r '.name').js\"",
     "build:min": "bunzee -m src/index.ts \"dist/$(cat package.json | jq -r '.name').min.js\"",
-    "start:web:https": "vite-open --jsx=html-vdom --https example/web.ts",
+    "start:web:https": "vite-open --https example/web.ts",
     "lint": "eslint src && dprint check",
     "lint:fix": "eslint --fix src && dprint fmt",
     "prepack": "npm run clean && npm run build && (npm run build:dist || echo unable to bundle)",
@@ -50,6 +50,7 @@
     "prepare": "husky install && node .pull-configs.js"
   },
   "trustedDependencies": [
+    "@stagas/jest-node-exports-resolver",
     "bunzee",
     "decarg",
     "pull-configs",
@@ -59,6 +60,7 @@
     "@n1kk/intspector": "1.0.2",
     "@rollup/plugin-commonjs": "21.0.3",
     "@stagas/documentation-fork": "13.2.5",
+    "@stagas/jest-node-exports-resolver": "1.1.5-require-basedir",
     "@swc-node/jest": "1.4.3",
     "@swc/cli": "0.1.56",
     "@swc/core": "1.2.160",

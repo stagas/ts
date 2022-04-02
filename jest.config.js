@@ -7,9 +7,7 @@ module.exports = {
   coverageDirectory: '<rootDir>/coverage',
   collectCoverageFrom: ['src/**/*.{ts,tsx}'],
   coverageProvider: 'v8',
-  moduleNameMapper: {
-    'react\\/(jsx-runtime|jsx-dev-runtime)$': 'html-vdom',
-  },
+  resolver: require.resolve('@stagas/jest-node-exports-resolver'),
   // preset: 'ts-jest',
   transform: {
     '\\.(js|jsx|ts|tsx)$': [
