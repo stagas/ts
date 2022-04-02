@@ -1,7 +1,8 @@
 {
   "explorer.experimental.fileNesting.enabled": true,
+  "explorer.experimental.fileNesting.expand": false,
   "explorer.experimental.fileNesting.patterns": {
-    "package.json": ".eslintrc.js, .pull-configs.js, dprint.json, jest.config.js, tsconfig.dist.json, tsconfig.json, web-test-runner.config.js"
+    "package.json": ".eslintrc.js, .pull-configs.js, .swcrc, dprint.json, jest.config.js, tsconfig.dist.json, tsconfig.json, web-test-runner.config.js"
   },
   "files.exclude": {
     ".gitattributes": true,
