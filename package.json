@@ -60,7 +60,7 @@
     "@n1kk/intspector": "1.0.2",
     "@rollup/plugin-commonjs": "21.0.3",
     "@stagas/documentation-fork": "13.2.5",
-    "@stagas/jest-node-exports-resolver": "1.1.5-require-basedir",
+    "@stagas/jest-node-exports-resolver": "1.1.5-require-basedir-2",
     "@swc-node/jest": "1.4.3",
     "@swc/cli": "0.1.56",
     "@swc/core": "1.2.160",
