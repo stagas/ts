@@ -11,6 +11,7 @@ merge('package.json', (prev, next) => {
   prev.trustedDependencies = [
     ...new Set([...prev.trustedDependencies, ...(next.trustedDependencies ?? [])]),
   ].sort()
+  prev.types = next.types
   prev.scripts = next.scripts
   prev.files = next.files
   sort(assign(prev.devDependencies, next.devDependencies))
