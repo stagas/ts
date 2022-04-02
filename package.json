@@ -39,8 +39,8 @@
     "build:cjs": "swc -C module.type=commonjs ./src -d dist/cjs",
     "build:esm": "swc -C module.type=es6 ./src -d dist/esm && echo '{\"type\":\"module\"}' >dist/esm/package.json",
     "build:types": "tsc -p tsconfig.dist.json --outDir dist/types",
-    "build:bundle": "esbuild dist/esm/index.js --bundle --format=esm --outfile=\"dist/$(cat package.json | jq -r '.name').js\" && wc -c \"dist/$(cat package.json | jq -r '.name').js\"",
-    "build:min": "terser --compress --module --mangle -o \"dist/$(cat package.json | jq -r '.name').min.js\" \"dist/$(cat package.json | jq -r '.name').js\" && wc -c \"dist/$(cat package.json | jq -r '.name').min.js\"",
+    "build:bundle": "bunzee src/index.ts \"dist/$(cat package.json | jq -r '.name').js\"",
+    "build:min": "bunzee -m src/index.ts \"dist/$(cat package.json | jq -r '.name').min.js\"",
     "start:web:https": "vite-open --jsx=html-vdom --https example/web.ts",
     "lint": "eslint src && dprint check",
     "lint:fix": "eslint --fix src && dprint fmt",
@@ -50,6 +50,7 @@
     "prepare": "husky install && node .pull-configs.js"
   },
   "trustedDependencies": [
+    "bunzee",
     "decarg",
     "pull-configs",
     "vite-open"
@@ -68,9 +69,9 @@
     "@typescript-eslint/parser": "5.15.0",
     "@web/dev-server-rollup": "0.3.15",
     "@web/test-runner": "0.13.27",
+    "bunzee": "^0.0.1",
     "chokidar": "^3.5.3",
     "dprint": "0.23.1",
-    "esbuild": "0.14.27",
     "eslint": "8.11.0",
     "eslint-config-html-jsx": "1.0.0",
     "eslint-plugin-import": "2.25.4",
@@ -81,7 +82,6 @@
     "pull-configs": "^0.2.0",
     "rimraf": "3.0.2",
     "swcno": "0.1.1",
-    "terser": "5.12.1",
     "ts-jest": "27.1.3",
     "ts-node": "10.7.0",
     "typescript": "4.6.2",
