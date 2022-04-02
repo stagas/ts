@@ -12,6 +12,7 @@ merge('package.json', (prev, next) => {
     ...new Set([...prev.trustedDependencies, ...(next.trustedDependencies ?? [])]),
   ].sort()
   prev.scripts = next.scripts
+  prev.files = next.files
   sort(assign(prev.devDependencies, next.devDependencies))
 })
 replace('.gitignore')
