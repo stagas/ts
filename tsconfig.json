@@ -33,6 +33,7 @@
     "isolatedModules": true,
     "inlineSources": true,
     "declaration": true,
+    "skipDefaultLibCheck": true,
     "skipLibCheck": true,
     "sourceMap": true,
     "allowJs": true,
