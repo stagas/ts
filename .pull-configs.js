@@ -25,17 +25,17 @@ replace('jest.config.js')
 replace('tsconfig.json')
 replace('tsconfig.dist.json')
 replace('web-test-runner.config.js')
-merge('.vscode/settings.json')
 
 const deprecated = [
   '.vscode/extensions.json',
+  '.vscode',
   '.prettierrc',
   '.prettierignore',
   'vite.config.js',
 ]
 deprecated.forEach(x => {
   try {
-    fs.unlinkSync(x)
+    fs.rmSync(x, { recursive: true })
     console.log('removed', x)
   } catch {}
 })
