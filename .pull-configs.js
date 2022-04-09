@@ -25,6 +25,7 @@ replace('jest.config.js')
 replace('tsconfig.json')
 replace('tsconfig.dist.json')
 replace('web-test-runner.config.js')
+replace('LICENSE')
 
 const deprecated = [
   '.vscode/extensions.json',
