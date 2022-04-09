@@ -31,6 +31,7 @@ const deprecated = [
   '.vscode',
   '.prettierrc',
   '.prettierignore',
+  'example/tsconfig.json',
   'vite.config.js',
 ]
 deprecated.forEach(x => {
