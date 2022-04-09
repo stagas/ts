@@ -31,7 +31,7 @@
     "build:dist": "npm run build:bundle && npm run build:min",
     "cov:watch": "jest --coverage --watchAll",
     "clean": "rimraf dist",
-    "docs": "documentation readme src --resolve=node --pe ts --re ts --re d.ts --github --section=API --markdown-toc-max-depth=3 && dprint fmt README.md",
+    "docs": "dokio -o README.md && dprint fmt README.md",
     "test": "npm run test:node && npm run test:web",
     "test:node": "if find test -type f -iregex '.*\\.spec\\.\\(js\\|jsx\\|ts\\|tsx\\)$' | grep -q .; then jest; else echo no node tests; fi",
     "test:web": "if find test -type f -iregex '.*\\.spec\\.web\\.\\(js\\|jsx\\|ts\\|tsx\\)$' | grep -q .; then web-test-runner; else echo no web tests; fi",
@@ -60,7 +60,6 @@
   "devDependencies": {
     "@n1kk/intspector": "1.0.2",
     "@rollup/plugin-commonjs": "21.0.3",
-    "@stagas/documentation-fork": "13.2.5",
     "@stagas/jest-node-exports-resolver": "1.1.5-require-basedir-2",
     "@swc-node/jest": "1.4.3",
     "@swc/cli": "0.1.56",
