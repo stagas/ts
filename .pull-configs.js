@@ -15,6 +15,9 @@ merge('package.json', (prev, next) => {
   prev.scripts = next.scripts
   prev.files = next.files
   sort(assign(prev.devDependencies, next.devDependencies))
+
+  // deprecated
+  delete prev.devDependencies['@stagas/documentation-fork']
 })
 replace('.gitignore')
 replace('.eslintrc.js')
