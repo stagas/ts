@@ -48,7 +48,7 @@
     "prepack": "npm run clean && npm run build && (npm run build:dist || echo unable to bundle)",
     "prepack:dry": "npm pack --dry-run",
     "prepush": "npm run lint && npm run test",
-    "prepare": "husky install && node .pull-configs.js"
+    "prepare": "husky install"
   },
   "trustedDependencies": [
     "@stagas/jest-node-exports-resolver",
