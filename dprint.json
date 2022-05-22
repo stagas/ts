@@ -8,7 +8,7 @@
     "quoteProps": "asNeeded",
     "quoteStyle": "alwaysSingle",
     "semiColons": "asi",
-    "useBraces": "preferNone"
+    "useBraces": "maintain"
   },
   "json": {},
   "markdown": {},
@@ -23,8 +23,8 @@
     ".vscode/**/*"
   ],
   "plugins": [
-    "https://plugins.dprint.dev/typescript-0.64.2.wasm",
-    "https://plugins.dprint.dev/json-0.14.1.wasm",
-    "https://plugins.dprint.dev/markdown-0.12.2.wasm"
+    "https://plugins.dprint.dev/typescript-0.68.3.wasm",
+    "https://plugins.dprint.dev/json-0.15.2.wasm",
+    "https://plugins.dprint.dev/markdown-0.13.2.wasm"
   ]
 }
