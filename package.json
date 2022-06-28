@@ -25,7 +25,8 @@
     "!**/*.tsbuildinfo"
   ],
   "scripts": {
-    "start:web": "vite-open example/web.ts",
+    "start:web": "vite-open example/web --https",
+    "start:web:debugging": "vite-open example/web --https --debugging-this",
     "start:node": "onchange -i src example -- swcno example/node.ts",
     "build:watch": "tsc -p tsconfig.dist.json --outDir dist/types --watch & swc -w -C module.type=commonjs ./src -d dist/cjs -w & swc -w -C module.type=es6 ./src -d dist/esm",
     "build:dist": "npm run build:bundle && npm run build:min",
@@ -55,6 +56,7 @@
     "bunzee",
     "decarg",
     "pull-configs",
+    "rollup-plugin-debug",
     "vite-open",
     "wtr-plugin-vite"
   ],
@@ -89,7 +91,7 @@
     "ts-jest": "27.1.5",
     "ts-node": "10.8.1",
     "typescript": "4.7.3",
-    "vite-open": "^2.1.0",
+    "vite-open": "^2.3.0",
     "wtr-plugin-vite": "^0.0.3"
   }
 }
