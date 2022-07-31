@@ -16,12 +16,17 @@ merge('package.json', (prev, next) => {
   prev.files = next.files
   sort(assign(prev.devDependencies, next.devDependencies))
 
+  // never used it - OTR screen acts like review so
+  // it can be accidentally published anyway. also i dont care
+  delete prev.private
+
   // deprecated
   delete prev.devDependencies['@stagas/documentation-fork']
   delete prev.devDependencies['@rollup/plugin-commonjs']
   delete prev.devDependencies['@stagas/sucrase-jest-plugin']
   delete prev.devDependencies['@web/dev-server-esbuild']
   delete prev.devDependencies['@web/dev-server-rollup']
+  delete prev.devDependencies['@web/test-runner']
   delete prev.devDependencies['esbuild']
   delete prev.devDependencies['esbuild-register']
   delete prev.devDependencies['prettier']
