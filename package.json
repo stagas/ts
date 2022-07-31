@@ -86,7 +86,7 @@
     "@typescript-eslint/eslint-plugin": "5.30.7",
     "@typescript-eslint/parser": "5.30.7",
     "bunzee": "^1.0.0",
-    "dokio": "^0.0.1",
+    "dokio": "^0.0.2",
     "dprint": "0.30.3",
     "eslint": "8.20.0",
     "eslint-config-html-jsx": "^1.0.0",
