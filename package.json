@@ -5,7 +5,6 @@
   "description": "minimal typescript template",
   "version": "7.0.5",
   "license": "MIT",
-  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://git@github.com:stagas/typescript-minimal-template.git"
@@ -50,30 +49,6 @@
     "prepush": "npm run lint && npm run test",
     "prepare": "husky install"
   },
-  "trustedDependencies": [
-    "@stagas/chalk",
-    "annotate-code",
-    "apply-sourcemaps",
-    "bunzee",
-    "decarg",
-    "deep-mutate-object",
-    "dokio",
-    "each-dep",
-    "event-toolkit",
-    "everyday-node",
-    "everyday-types",
-    "everyday-utils",
-    "html-jsx",
-    "pick-omit",
-    "proxy-toolkit",
-    "pull-configs",
-    "puppeteer-pretty-console",
-    "rollup-plugin-debug",
-    "run-in-vite",
-    "to-fluent",
-    "utr",
-    "vite-open"
-  ],
   "devDependencies": {
     "@n1kk/intspector": "1.0.2",
     "@swc/cli": "0.1.57",
