@@ -1,5 +1,5 @@
 <h1>
-typescript-minimal-template <a href="https://npmjs.org/package/typescript-minimal-template"><img src="https://img.shields.io/badge/npm-v8.0.1-F00.svg?colorA=000"/></a> <a href="src"><img src="https://img.shields.io/badge/loc-2-FFF.svg?colorA=000"/></a> <a href="https://cdn.jsdelivr.net/npm/typescript-minimal-template@8.0.1/dist/typescript-minimal-template.min.js"><img src="https://img.shields.io/badge/brotli-92b-333.svg?colorA=000"/></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-F0B.svg?colorA=000"/></a>
+typescript-minimal-template <a href="https://npmjs.org/package/typescript-minimal-template"><img src="https://img.shields.io/badge/npm-v9.0.0-F00.svg?colorA=000"/></a> <a href="src"><img src="https://img.shields.io/badge/loc-2-FFF.svg?colorA=000"/></a> <a href="https://cdn.jsdelivr.net/npm/typescript-minimal-template@9.0.0/dist/typescript-minimal-template.min.js"><img src="https://img.shields.io/badge/brotli-92b-333.svg?colorA=000"/></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-F0B.svg?colorA=000"/></a>
 </h1>
 
 <p></p>
@@ -40,21 +40,21 @@ main.innerHTML = `<h1>1 + 2 = ${add(1, 2)}</h1>`
 </p>
 </details></ul></details>
 
-<h1><a href="https://github.com/stagas/typescript-minimal-template/generate">🥁 Use this template 🥁</a></h1>
-<h2>Features</h2>
-<ul>
-<li>TypeScript with <a href="https://swc.rs/">SWC</a></li>
-<li>Outputs both <strong>CommonJS</strong> and <strong>ES Modules</strong>, ready to <strong>publish on npm</strong></li>
-<li>Automatic dist bundling using <a href="https://github.com/stagas/bunzee">bunzee</a></li>
-<li>Documentation generation using <a href="https://github.com/stagas/dokio">dokio</a></li>
-<li><a href="https://github.com/stagas/utr">Universal Test Runner</a> for isomorphic Node.js and real browser testing incl. coverage and snapshots</li>
-<li><strong>JSX</strong> out of the box</li>
-<li>Examples / Playground using <a href="https://github.com/stagas/vite-open">vite-open</a></li>
-<li>Evergreen using <a href="https://github.com/stagas/pull-configs">pull-configs</a></li>
-<li><a href="https://eslint.org/">ESLint</a></li>
-<li><a href="https://dprint.dev/">dprint</a></li>
-<li><a href="https://typicode.github.io/husky/">Husky</a></li>
-</ul>
+# [🥁 Use this template 🥁](https://github.com/stagas/typescript-minimal-template/generate)
+
+## Features
+
+- TypeScript with [SWC](https://swc.rs/)
+- Outputs both **CommonJS** and **ES Modules**, ready to **publish on npm**
+- Automatic dist bundling using [bunzee](https://github.com/stagas/bunzee)
+- Documentation generation using [dokio](https://github.com/stagas/dokio)
+- [Universal Test Runner](https://github.com/stagas/utr) for isomorphic Node.js and real browser testing incl. coverage and snapshots
+- **JSX** out of the box
+- Examples / Playground using [vite-open](https://github.com/stagas/vite-open)
+- Evergreen using [pull-configs](https://github.com/stagas/pull-configs)
+- [ESLint](https://eslint.org/)
+- [dprint](https://dprint.dev/)
+- [Husky](https://typicode.github.io/husky/)
 
 ## API
 
