@@ -3,12 +3,12 @@
 ## Features
 
 - TypeScript with [SWC](https://swc.rs/)
+- **JSX/TSX** out of the box
 - Outputs both **CommonJS** and **ES Modules**, ready to **publish on npm**
 - Automatic dist bundling using [bunzee](https://github.com/stagas/bunzee)
 - Documentation generation using [dokio](https://github.com/stagas/dokio)
-- [Universal Test Runner](https://github.com/stagas/utr) for isomorphic Node.js and real browser testing incl. coverage and snapshots
-- **JSX** out of the box
-- Examples / Playground using [vite-open](https://github.com/stagas/vite-open)
+- Isomorphic Node.js and real browser testing incl. coverage and snapshots with [utr](https://github.com/stagas/utr)
+- Examples / Playground using [devito](https://github.com/stagas/devito)
 - Evergreen using [pull-configs](https://github.com/stagas/pull-configs)
 - [ESLint](https://eslint.org/)
 - [dprint](https://dprint.dev/)
