@@ -1,5 +1,5 @@
 <h1>
-typescript-minimal-template <a href="https://npmjs.org/package/typescript-minimal-template"><img src="https://img.shields.io/badge/npm-v9.0.0-F00.svg?colorA=000"/></a> <a href="src"><img src="https://img.shields.io/badge/loc-2-FFF.svg?colorA=000"/></a> <a href="https://cdn.jsdelivr.net/npm/typescript-minimal-template@9.0.0/dist/typescript-minimal-template.min.js"><img src="https://img.shields.io/badge/brotli-92b-333.svg?colorA=000"/></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-F0B.svg?colorA=000"/></a>
+typescript-minimal-template <a href="https://npmjs.org/package/typescript-minimal-template"><img src="https://img.shields.io/badge/npm-v9.0.1-F00.svg?colorA=000"/></a> <a href="src"><img src="https://img.shields.io/badge/loc-2-FFF.svg?colorA=000"/></a> <a href="https://cdn.jsdelivr.net/npm/typescript-minimal-template@9.0.1/dist/typescript-minimal-template.min.js"><img src="https://img.shields.io/badge/brotli-92b-333.svg?colorA=000"/></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-F0B.svg?colorA=000"/></a>
 </h1>
 
 <p></p>
@@ -45,12 +45,12 @@ main.innerHTML = `<h1>1 + 2 = ${add(1, 2)}</h1>`
 ## Features
 
 - TypeScript with [SWC](https://swc.rs/)
+- **JSX/TSX** out of the box
 - Outputs both **CommonJS** and **ES Modules**, ready to **publish on npm**
 - Automatic dist bundling using [bunzee](https://github.com/stagas/bunzee)
 - Documentation generation using [dokio](https://github.com/stagas/dokio)
-- [Universal Test Runner](https://github.com/stagas/utr) for isomorphic Node.js and real browser testing incl. coverage and snapshots
-- **JSX** out of the box
-- Examples / Playground using [vite-open](https://github.com/stagas/vite-open)
+- Isomorphic Node.js and real browser testing incl. coverage and snapshots with [utr](https://github.com/stagas/utr)
+- Examples / Playground using [devito](https://github.com/stagas/devito)
 - Evergreen using [pull-configs](https://github.com/stagas/pull-configs)
 - [ESLint](https://eslint.org/)
 - [dprint](https://dprint.dev/)
