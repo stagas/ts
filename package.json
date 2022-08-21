@@ -61,7 +61,7 @@
     "bunzee": "^1.0.0",
     "chokidar": "3.5.3",
     "devito": "^1.3.3",
-    "dokio": "^1.0.1",
+    "dokio": "^1.1.0",
     "dprint": "0.30.3",
     "eslint": "8.20.0",
     "eslint-config-html-jsx": "^1.0.0",
