@@ -1,5 +1,5 @@
 <h1>
-typescript-minimal-template <a href="https://npmjs.org/package/typescript-minimal-template"><img src="https://img.shields.io/badge/npm-v9.0.1-F00.svg?colorA=000"/></a> <a href="src"><img src="https://img.shields.io/badge/loc-2-FFF.svg?colorA=000"/></a> <a href="https://cdn.jsdelivr.net/npm/typescript-minimal-template@9.0.1/dist/typescript-minimal-template.min.js"><img src="https://img.shields.io/badge/brotli-92b-333.svg?colorA=000"/></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-F0B.svg?colorA=000"/></a>
+typescript-minimal-template <a href="https://npmjs.org/package/typescript-minimal-template"><img src="https://img.shields.io/badge/npm-v9.0.2-F00.svg?colorA=000"/></a> <a href="src"><img src="https://img.shields.io/badge/loc-2-FFF.svg?colorA=000"/></a> <a href="https://cdn.jsdelivr.net/npm/typescript-minimal-template@9.0.2/dist/typescript-minimal-template.min.js"><img src="https://img.shields.io/badge/brotli-92b-333.svg?colorA=000"/></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-F0B.svg?colorA=000"/></a>
 </h1>
 
 <p></p>
@@ -58,14 +58,7 @@ main.innerHTML = `<h1>1 + 2 = ${add(1, 2)}</h1>`
 
 ## API
 
-<p>  <details id="add$1" title="Function" open><summary><span><a href="#add$1">#</a></span>  <code><strong>add</strong></code><em>(a, b)</em>     &ndash; Adds two numbers together.</summary>  <a href="src/mod.ts#L12">src/mod.ts#L12</a>  <ul>    <p>  <p>
-
-```ts
-add(1, 2) // => 3
-```
-
-</p>
-  <details id="a$3" title="Parameter" ><summary><span><a href="#a$3">#</a></span>  <code><strong>a</strong></code>     &ndash; First number</summary>    <ul><p>number</p>        </ul></details><details id="b$4" title="Parameter" ><summary><span><a href="#b$4">#</a></span>  <code><strong>b</strong></code>     &ndash; Second number</summary>    <ul><p>number</p>        </ul></details>  <p><strong>add</strong><em>(a, b)</em>  &nbsp;=&gt;  <ul>number</ul></p></p>    </ul></details></p>
+<p>  <details id="add$1" title="Function" open><summary><span><a href="#add$1">#</a></span>  <code><strong>add</strong></code><em>(a, b)</em>    </summary>  <a href=""></a>  <ul>    <p>    <details id="a$3" title="Parameter" ><summary><span><a href="#a$3">#</a></span>  <code><strong>a</strong></code>    </summary>    <ul><p>number</p>        </ul></details><details id="b$4" title="Parameter" ><summary><span><a href="#b$4">#</a></span>  <code><strong>b</strong></code>    </summary>    <ul><p>number</p>        </ul></details>  <p><strong>add</strong><em>(a, b)</em>  &nbsp;=&gt;  <ul>number</ul></p></p>    </ul></details></p>
 
 ## Contributing
 
