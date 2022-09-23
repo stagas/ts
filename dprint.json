@@ -3,7 +3,7 @@
   "incremental": true,
   "typescript": {
     "arguments.trailingCommas": "never",
-    "arrowFunction.useParentheses": "preferNone",
+    "arrowFunction.useParentheses": "force",
     "commentLine.forceSpaceAfterSlashes": false,
     "jsx.quoteStyle": "preferDouble",
     "quoteProps": "asNeeded",
